@@ -1,0 +1,619 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.company-logo{
+    width: 100%;
+    height: 70px;
+}
+
+.logo{
+    height: 60px;
+    width: 200px;
+    margin-left: 250px;
+    margin-top: 5px;
+}
+
+#cmp-logo{
+    width: inherit;
+    height: inherit;
+}
+
+#cmp-logo{
+    width: inherit;
+    height: inherit;
+}
+
+
+/* Tablet View (max-width: 768px) */
+@media (max-width: 768px) {
+    .company-logo{
+        width: auto;
+    }
+    .logo {
+        width: 180px; /* Adjust the width */
+        height: 50px; /* Adjust the height */
+        margin-left: auto; /* Center the logo */
+        margin-right: auto;
+        margin-top: 10px;
+    }
+}
+
+/* Mobile View (max-width: 480px) */
+@media (max-width: 480px) {
+    .company-logo{
+        width: 550px;
+    }
+    .logo {
+        width: 160px; /* Further reduce the width */
+        height: 50px; /* Further reduce the height */
+        margin-left: auto; /* Center the logo */
+        margin-right: auto;
+        margin-top: 10px;
+    }
+}
+
+
+.main{
+    width: 100%;
+    height:160vh;
+    position: relative;
+    z-index: 1;
+
+}
+.main-content{
+    margin: 5px 15px;
+    height: 120vh;
+    background-color: rgb(223, 241, 246);
+    position: relative;
+    z-index: 2;
+}
+
+.heading{
+    width: inherit;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.heading h2{
+    font-size: 90px;
+    height: inherit;
+    color: rgb(22, 65, 87);
+}
+
+.main-content-section{
+    width: inherit;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.main-section{
+    width: 80%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.section{
+    display:flex;
+    margin: 10px;
+    height: inherit;
+    width: inherit;
+    justify-content: center;
+}
+
+.last-section{
+    width: 100%;
+    height: 70%;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+
+.content1{
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    justify-content:flex-end;
+    gap: 20px;
+    
+}
+
+.content1 #heads{
+    color: rgb(95, 95, 93);
+    font-size: 15px;
+}
+
+.content1 #heads2{
+    color: rgb(22, 65, 87);
+    font-size: 30px;
+    font-weight: 60px;
+}
+
+.content1 button{
+    border-radius: 20px;
+    width: 8rem;
+    margin-left: 10px;
+    padding: 9px;
+    background-color: rgb(22, 65, 87);
+    color: white;
+}
+
+.content2 img{
+    width: inherit;
+    height: 300px;
+    
+}
+
+.sub-content1 {
+    display: flex;
+    height: 70px;
+    width: 100%;
+    gap: 5px;
+    align-items: center; /* Ensure content is vertically aligned */
+   
+}
+
+.sub-content {
+    margin-left: 15px;
+}
+
+.icon {
+    background-color: rgb(22, 65, 87); /* Background color for the symbol */
+    color: white;                     /* Symbol color */
+    font-size: 24px;                  /* Adjust the size of the icon */
+    padding: 10px;                    /* Space around the symbol */
+    border-radius: 50%;               /* Circular background */
+    display: inline-flex;             /* Align the icon inside the circle */
+    justify-content: center;          /* Center the symbol horizontally */
+    align-items: center;              /* Center the symbol vertically */
+}
+
+
+.feature-section{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content:center;
+    position: absolute;
+    z-index: 4;
+    bottom: 100px;
+}
+
+.feature-icon {
+    background-color: white; /* Background color for the symbol */
+    color: rgb(22, 65, 87);                     /* Symbol color */
+    font-size: 60px;                  /* Adjust the size of the icon */
+    padding: 10px;                    /* Space around the symbol */
+    border-radius: 50%;               /* Circular background */
+    display: inline-flex;             /* Align the icon inside the circle */
+    justify-content: center;          /* Center the symbol horizontally */
+    align-items: center;              /* Center the symbol vertically */
+}
+.feature-box{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.feature{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 10px;
+    padding: 10px 40px;
+    
+}
+
+.feature h4,.feature p{
+ color: white;
+}
+
+.feature p{
+    font-size: 12px;
+}
+.feature-background{
+    width: 80%;
+    height: 350px;
+    margin-left: 130px;
+    border-radius: 30px;
+    background-color:  rgb(22, 65, 87);
+    position: absolute;
+    z-index: 3;
+    bottom: 80px;
+}
+
+
+
+/* Tablet View (max-width: 768px) */
+@media (max-width: 768px) {
+    .main{
+        width: auto;
+        height: 170vh;
+    }
+    .main-content {
+        margin: 10px;
+        height: 120vh; /* Allow height to adjust dynamically */
+    }
+    .heading{
+        height: max-content;
+    }
+    .heading h2 {
+        font-size: 50px;
+         /* Reduce font size for heading */
+    }
+
+    .main-content-section {
+        flex-direction: column; /* Stack content vertically */
+        height: max-content;
+    }
+
+    .main-section {
+        width: 100%; /* Full width for content */
+        height: max-content;
+    }
+
+    .section {
+        align-items: center;
+        margin: 10px 0; /* Add spacing between stacked sections */
+        height: 250px; /* Adjust height for content */
+    }
+
+    .content1 {
+        align-items: center;
+        text-align: center; /* Center text content */
+    }
+
+    .content1 button {
+        margin: 0 auto; /* Center the button */
+    }
+
+    .content2 img {
+        height: 200px; /* Adjust image size */
+        width: auto; /* Maintain aspect ratio */
+    }
+
+    .last-section {
+        height: inherit;
+        margin-top: 0px;
+       font-size: 15px;
+        align-items: center;
+        justify-content: space-evenly; /* Center align sub-content */
+    }
+
+
+    .sub-content1 {
+       
+        align-items: center;
+        height: max-content; /* Allow height to adjust */
+        text-align: center; /* Center-align the text */
+    }
+    .icon {
+                /* Symbol color */
+            font-size: 24px;                  /* Adjust the size of the icon */
+                   /* Circular background */
+                    /* Center the symbol vertically */
+    }
+    .feature-section{
+        bottom: 200;
+    }
+    .feature-box {
+        width: 90%;
+        justify-content: center; /* Center-align features */
+    }
+
+    .feature {
+        gap: 2;
+        width: max-content; /* Reduce size for tablet screens */
+        margin: 10px;
+        padding: 0px 0px;
+    }
+
+    .feature-icon {
+        font-size: 40px; /* Adjust icon size */
+        padding: 8px;
+    }
+
+    .feature-background {
+        
+        margin-left: 40px;
+        width: 90%; /* Adjust background width */
+    }
+}
+
+/* Mobile View (max-width: 480px) */
+@media (max-width: 480px) {
+    body{
+        width: fit-content;
+    }
+    .main{
+        width: auto;
+        height: 250vh;
+    }
+    .main-content {
+        margin: 10px;
+        height: 200vh; /* Allow height to adjust dynamically */
+    }
+    .heading{
+        height: max-content;
+    }
+    .heading h2 {
+        font-size: 50px;
+         /* Reduce font size for heading */
+    }
+
+    .main-content-section {
+       
+        height: max-content;
+    }
+
+    .main-section {
+
+        flex-direction: column;
+        width: 100%; /* Full width for content */
+       
+    }
+
+    .section {
+        font-size: 15px;
+        align-items: center;
+        margin: 0px 0; /* Add spacing between stacked sections */
+        height: 230px; /* Adjust height for content */
+    }
+
+    .content1 {
+        align-items: center;
+        text-align: center;
+        gap: 10px; 
+        margin-top: 0px;
+    margin-bottom: 0px;
+    }
+
+    .content1 button {
+        margin: 0 auto; /* Center the button */
+    }
+
+    .content2 img {
+        height: 200px; /* Adjust image size */
+        width: auto; /* Maintain aspect ratio */
+    }
+
+    .last-section {
+        height: inherit;
+        margin-top: 0px;
+       font-size: 15px;
+    }
+
+    .sub-content1 {
+       justify-content: center;
+        align-items: center;
+        height: max-content; /* Allow height to adjust */
+        text-align: center; /* Center-align the text */
+    }
+    .icon {
+            font-size: 24px;                    
+    }
+    .feature-section{
+        bottom: 190;
+       
+    }
+    .feature-box {
+        width: 90%;
+        justify-content: center;
+        
+    }
+
+    .feature {
+        width: max-content; /* Reduce size for tablet screens */
+        margin: 10px ;
+        padding: 0px 0px;
+    }
+
+    .feature-icon {
+        font-size: 30px; /* Adjust icon size */
+        padding: 8px;
+    }
+
+    .feature-background {
+        bottom: 50px;
+        height: 25rem;
+        margin-left: 30px;
+        width: 90%; /* Adjust background width */
+    }
+}
+
+.menu-section{
+    width: 100%;
+    height:450px;
+
+}
+
+.menu-box{
+    width: 80%;
+    height: inherit;
+    margin-left: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.menu-title{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    gap: 10px;
+    color: rgb(22, 65, 87);
+    height: 150px;
+    justify-content: space-evenly;
+}
+.menu-title p{
+    font-size: 13px;
+    color: rgb(95, 95, 93);
+}
+
+.ingredient-card{
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    height: 200px;
+    border-radius: 10px;
+    color: rgb(22, 65, 87);
+    gap: 10px;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+.ingredient-card a{
+    margin-top: 90px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.ingredient-card a:hover{
+    text-decoration: underline;
+}
+.ingredient-card p{
+    font-size: 12px;
+}
+
+      /* all the below images are menu section */
+#img1{
+    background-image: url(Assets/img2.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+#img2{
+    background-image: url(Assets/img3.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+#img3{
+    background-image: url(Assets/img4.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+#img4{
+    background-image: url(Assets/img5.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+#img5{
+    background-image: url(Assets/img6.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.menu-design-box{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 10px;
+    width: 100px;
+    height: 200px;
+}
+
+.halfcurve{
+    width: inherit;
+    height: 90px;
+    border-radius: 0px 5px 100px 5px;
+    background-color: rgb(161, 216, 251);
+}
+
+.circle{
+    width: inherit;
+    height: 90px;
+    border-radius: 50%;
+    background-color: rgb(253, 191, 56);
+}
+
+@media (max-width: 768px) {
+    .menu-section{
+        width: 100%;
+        height: max-content;
+    }
+    .menu-box{
+        width: 90%;
+        margin-left: 40px;
+        height: max-content;
+        justify-content: space-evenly;
+    }
+    .menu-design-box{
+       height: 160px;
+       margin-top: 5px;
+    }
+    .ingredient-card{
+        margin-top: 10px;
+        gap: 5px;
+        height: 160px;
+        width: 200px;
+    }
+    .ingredient-card a{
+        margin-top: 50px;
+    }
+    .menu-title{
+        width: 300px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu-section{
+        width: 100%;
+        height: max-content;
+    }
+    .menu-box{
+        gap: 5px;
+        width: 90%;
+        margin-left: 40px;
+        height: max-content;
+        justify-content: space-evenly;
+    }
+    .menu-design-box{
+       
+    }
+    .ingredient-card{
+        margin-top: 10px;
+        gap: 5px;
+        height: 160px;
+        margin-bottom: 10px;
+        width: 200px;
+    }
+    .ingredient-card a{
+        margin-top: 50px;
+    }
+    .menu-title{
+        width: 290px;
+        margin-top: 10px;
+        align-items: center;
+    }    
+    .menu-title h1{
+        font-size: 32px;
+    }
+    .menu-title p{
+   
+        text-align: center;
+    }
+}
+
+.news-section{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    color: rgb(22, 65, 87);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
